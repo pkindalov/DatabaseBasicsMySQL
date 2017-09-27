@@ -1,0 +1,4 @@
+USE `minions`;
+ALTER TABLE `Users` MODIFY id INT NOT NULL;
+ALTER TABLE `Users` DROP PRIMARY KEY;
+ALTER TABLE `Users` ADD PRIMARY KEY (`id`, `username`);
